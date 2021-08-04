@@ -21,29 +21,13 @@ extra-source-files:
   LICENSE
   README.md
 
-executable algebraic-graphs-patch
+library
   build-depends:
-    , aeson
-    , async
+    , algebraic-graphs
     , base
-    , bytestring
     , containers
-    , data-default
-    , directory
-    , filepath
-    , lens
-    , megaparsec
-    , monad-logger
-    , mtl
-    , neat-interpolation
-    , profunctors
+    , patch
     , relude
-    , shower
-    , tagged
-    , text
-    , time
-    , unliftio
-    , with-utf8
 
   mixins:
     base hiding (Prelude),
@@ -65,6 +49,8 @@ executable algebraic-graphs-patch
     TupleSections
     ViewPatterns
 
-  main-is:            Main.hs
+  exposed-modules:
+    Algebra.Graph.Labelled.AdjacencyMap.Patch
+
   hs-source-dirs:     src
   default-language:   Haskell2010
