@@ -1,4 +1,4 @@
-# haskell-template
+# algebraic-graphs-patch
 
 Haskell project template optimized for a fully reproducible and friendly development environment. Based on [Nix](https://notes.srid.ca/haskell-nix) + [Flakes](https://serokell.io/blog/practical-nix-flakes) + VSCode ([HLS](https://github.com/haskell/haskell-language-server)) + [ormolu](https://github.com/tweag/ormolu) autoformatting + [Relude](https://github.com/kowainik/relude#relude) as Prelude.
 
@@ -15,7 +15,7 @@ All but the final step need to be done only once.
 
 Then, before using it for real,
 
-- Rename all occurrences of `haskell-template` to `myproject`, as well as rename the cabal file to `myproject.cabal`. 
+- Rename all occurrences of `algebraic-graphs-patch` to `myproject`, as well as rename the cabal file to `myproject.cabal`. 
 - Run `git add . && git commit -m rename` followed by `nix develop` (or `bin/run`) to verify that everything continues to work.
 
 ## Other templates
